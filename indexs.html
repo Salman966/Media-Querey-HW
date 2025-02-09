@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipes</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        .navbar { display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd; position: fixed; width: 100%; background: white; top: 0; }
+        .search-bar { flex-grow: 1; margin: 0 10px; }
+        .search-bar input { width: 100%; padding: 5px; }
+        .content { padding-top: 50px; }
+        .stats, .full-image { text-align: center; padding: 10px; }
+        .full-image img { width: 100%; max-width: 600px; }
+        .recipes { padding: 20px; }
+        .recipe { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #ddd; flex-direction: row; text-align: left; }
+        .recipe img { width: 150px; height: 100px; margin-right: 10px; }
+        p { text-align: center; display: flex; justify-content: center; }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div>Cooking Recipes</div>
+        <div class="search-bar"><input type="text" placeholder="Search"></div>
+        <div>Login</div>
+    </div>
+
+    <div class="content">
+        <div class="stats">
+            <p>The largest source of trusted recipes</p>
+            <p>113K Recipes - 6.9M Reviews - 60M Home Cooks</p>
+        </div>
+
+        <div class="full-image">
+            <img src="https://www.allrecipes.com/thmb/Jb8oWEA5vfPSODnShnxbWeK7s3Q=/800x533/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8767178-Ground-Beef-and-Rice-Skillet-ddmfs-Beauty-10579-fff56a964c094ba78f8a0fe4a7854b66.jpg">
+        </div>
+    </div>
+
+    <p>Food news</p>
+
+    <div class="recipes">
+        <div class="recipe">
+            <img src="https://i.pinimg.com/236x/fc/3d/d8/fc3dd8e101ee74115f0377a58e88ff6b.jpg">
+            <p>Nice soup recipe and looks delicious</p>
+        </div>
+
+        <div class="recipe">
+            <img src="https://i.pinimg.com/474x/60/c8/c1/60c8c1e21733c7dbe22dc75e9ffeac31.jpg">
+            <p>Cinnamon Rolls Looks yummy</p>
+        </div>
+
+        <div class="recipe">
+            <img src="https://i.pinimg.com/236x/73/e4/97/73e4972995f0360b4d61d3f1176983b3.jpg">
+            <p>Dunkin Donuts Coffee for best Energy</p>
+        </div>
+    </div>
+
+</body>
+</html>
