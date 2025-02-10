@@ -11,17 +11,25 @@
         .search-bar input { width: 100%; padding: 5px; }
         .content { padding-top: 50px; }
         .stats, .full-image { text-align: center; padding: 10px; }
-        .full-image img { width: 100%; max-width: 600px; }
+        .full-image img { width: 100%; max-width: 600px; border-radius: 10px; }
         .recipes { padding: 20px; }
         .recipe { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #ddd; flex-direction: row; text-align: left; }
-        .recipe img { width: 150px; height: 100px; margin-right: 10px; }
-        p { text-align: center; display: flex; justify-content: center; }
+        .recipe img { width: 180px; height: 120px; margin-right: 10px; border-radius: 5px; }
+        .trending-section { padding: 20px; background: #f8f8f8; border-radius: 10px; }
+        .trending-title { font-size: 24px; font-weight: bold; text-align: center; margin-bottom: 20px; }
+        .trending-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+        .trend-item { text-align: center; }
+        .trend-item img { width: 200px; height: 150px; border-radius: 5px; }
+        .trend-category { font-size: 14px; color: gray; margin-top: 5px; }
+        .trend-title { font-size: 16px; font-weight: bold; }
+        .section { padding: 20px; text-align: center; }
+        .footer { background: #333; color: white; padding: 20px; text-align: center; margin-top: 20px; }
     </style>
 </head>
 <body>
 
     <div class="navbar">
-        <div>Cooking Recipes</div>
+        <div>&#9776; Cooking Recipes</div>
         <div class="search-bar"><input type="text" placeholder="Search"></div>
         <div>Login</div>
     </div>
@@ -37,23 +45,62 @@
         </div>
     </div>
 
-    <p>Food news</p>
-
     <div class="recipes">
         <div class="recipe">
             <img src="https://i.pinimg.com/236x/fc/3d/d8/fc3dd8e101ee74115f0377a58e88ff6b.jpg">
-            <p>Nice soup recipe and looks delicious</p>
+            <p>Potato-based dishes and delicious burgers</p>
         </div>
-
         <div class="recipe">
             <img src="https://i.pinimg.com/474x/60/c8/c1/60c8c1e21733c7dbe22dc75e9ffeac31.jpg">
-            <p>Cinnamon Rolls Looks yummy</p>
+            <p>Risotto paired with tasty pizza</p>
         </div>
+    </div>
 
-        <div class="recipe">
-            <img src="https://i.pinimg.com/236x/73/e4/97/73e4972995f0360b4d61d3f1176983b3.jpg">
-            <p>Dunkin Donuts Coffee for best Energy</p>
+    <div class="trending-section">
+        <div class="trending-title">Trending Now</div>
+        <div class="trending-grid">
+            <div class="trend-item">
+                <img src="https://i.pinimg.com/236x/5f/38/97/5f38977c51810c065d735e44f5fffb64.jpg" alt="Recipe 1">
+                <div class="trend-category">Delicious Potatoes</div>
+                <div class="trend-title">Cheese Potatoes</div>
+            </div>
+            <div class="trend-item">
+                <img src="https://i.pinimg.com/236x/44/a7/47/44a7470857eae54b03d080b1a5ea2b63.jpg" alt="Recipe 2">
+                <div class="trend-category">Best for burger lovers!</div>
+                <div class="trend-title">Cheese Burger</div>
+            </div>
         </div>
+    </div>
+
+    <div class="section">
+        <h2>Home of the Home Cook</h2>
+        <p>We know our community (that’s you!) is the key ingredient that sets us apart.</p>
+        <img src="https://i.pinimg.com/236x/cd/b0/01/cdb0012f10598443e5c5aa31519f0356.jpg" alt="Home of the Home Cook">
+    </div>
+
+    <div class="section">
+        <h2>Waffles</h2>
+        <p>"My first waffles from scratch and my picky husband thought these were amazing! Light and fluffy with a great flavor. I also made the homemade vanilla maple syrup."</p>
+        <p><strong>FOOTBALLGRL16, OKLAHOMA, JOINED 2009</strong></p>
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2SPt5BakK1DiD_qojBCFtsx0-r7s-xBZ9ary6ErOE8kxPBh0e" alt="Waffles">
+    </div>
+
+    <div class="section">
+        <h2>Editorial Leadership</h2>
+     
+        <p>Meet our expert team behind the recipes:</p>
+        <img src="https://media.licdn.com/dms/image/v2/D4D22AQGj7jUayAPnGA/feedshare-shrink_800/feedshare-shrink_800/0/1709812473199?e=2147483647&v=beta&t=tKX7M8cuZggmaU6T72h75zxFm3Cl-4C7DyETCEi7sn4" alt="Leadership">
+    </div>
+
+    <div class="section">
+        <h2>Follow Us</h2>
+        <p>Stay connected with us on social media:</p>
+        <img src="https://i.pinimg.com/236x/e6/1a/e9/e61ae980e05496293f6161974acbb54a.jpg" alt="Bottom Bar">
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Cooking Recipes. All Rights Reserved.</p>
+        <p><a>Privacy Policy</a> | <a>Terms of Service</a> | <a>Contact Us</a></p>
     </div>
 
 </body>
